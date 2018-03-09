@@ -1,14 +1,12 @@
 language: python
 python:
-	"3.6"
+    "3.6"
 install:
-	- pip install coverage
-	- pip install coveralls
-	
+    - pip install coverage
+    - pip install coveralls
 script:
-	- python verySimpleMath.py
-	- coverage run unittest_verySimpleMath.py
-	- coverage report
-	
+    - python verySimpleMath.py
+    - coverage run unittest_verySimpleMath.py
+    - coverage report
 after_success:
-	- coveralls
+    - coveralls
